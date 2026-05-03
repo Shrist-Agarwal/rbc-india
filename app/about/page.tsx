@@ -8,18 +8,18 @@ import CTABanner from "@/components/sections/CTABanner";
 import Link from "next/link";
 
 const timeline = [
-  { year: "1998", title: "The Beginning", desc: "Ramswarup Brothers and Co. founded in Siliguri with a vision to bring quality home hardware to North Bengal." },
-  { year: "2005", title: "Growing Portfolio", desc: "Became authorized dealers for Jaquar — North Bengal's first premium bathroom fittings distributor." },
-  { year: "2012", title: "Expanding Brands", desc: "Added Racold, Sintex, and EuroGuard to our portfolio, serving residential and commercial projects." },
-  { year: "2018", title: "Showroom Upgrade", desc: "Launched a premium showroom experience on Sevoke Road, allowing customers to see and touch every product." },
-  { year: "2024", title: "Today", desc: "10+ brands, 100+ product categories, and 5000+ satisfied customers across West Bengal." },
+  { year: "1970", title: "The Beginning", desc: "Founded by the late Sri Ramswarup Agarwal on the foundations of hard work, integrity, and an unwavering commitment to excellence. His exceptional ability to build personal relationships laid the groundwork for everything we have become." },
+  { year: "1990s", title: "Building the Network", desc: "Expanded our distribution reach steadily across North Bengal and Sikkim, establishing a reputation for precision, reliability, and dealer partnerships built on mutual trust." },
+  { year: "2000s", title: "Superbrand Partnerships", desc: "Became authorized distributors for India's most respected Superbrands — Prince Pipes, Sintex Tanks, Jaquar Bath Fittings, and Racold Geysers — a testament to the trust earned over generations." },
+  { year: "2015", title: "The RBC Brand", desc: "Launched our own brand, RBC — a curated range of premium bathroom accessories and designer mirrors, crafted to bring elegance and functionality to modern living spaces." },
+  { year: "Today", title: "Five Decades Strong", desc: "One of North Bengal and Sikkim's most trusted distribution companies, with a growing dealer network, a dedicated team, and a continued commitment to enriching lives across the region." },
 ];
 
 const values = [
-  { icon: Shield, title: "Integrity", desc: "We carry only authentic, warranted products. No shortcuts, no counterfeits." },
-  { icon: Award, title: "Excellence", desc: "Every brand we distribute meets our rigorous quality and durability standards." },
-  { icon: Heart, title: "Customer First", desc: "From first inquiry to after-sales support, your satisfaction guides every decision." },
-  { icon: Handshake, title: "Community", desc: "Deeply committed to Siliguri and North Bengal — our home, our responsibility." },
+  { icon: Shield, title: "Integrity", desc: "Founded on honesty and transparency, we hold ourselves to the highest standards — in every product we distribute and every promise we make." },
+  { icon: Award, title: "Excellence", desc: "A relentless pursuit of quality defines our team. Precision and dedication are not just words — they are the way we work, every single day." },
+  { icon: Handshake, title: "Partners as Family", desc: "Our dealer network is the heart of our business. We work closely with every partner to understand their needs and deliver tailored, reliable service." },
+  { icon: Heart, title: "Social Responsibility", desc: "We actively contribute to the communities that have supported us through the years — because true success means giving back." },
 ];
 
 export default function AboutPage() {
@@ -56,7 +56,7 @@ export default function AboutPage() {
             <span className="gradient-text">Building Trust</span>
           </h1>
           <p className="text-white/50 text-lg max-w-xl leading-relaxed">
-            For over 25 years, Ramswarup Brothers and Co. has been the name families and builders in North Bengal turn to for premium home hardware solutions.
+            Founded in 1970 by the late Sri Ramswarup Agarwal, RBC India has grown over five decades into one of North Bengal and Sikkim&apos;s most trusted distribution companies.
           </p>
         </div>
       </section>
@@ -88,8 +88,8 @@ export default function AboutPage() {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 className="absolute -bottom-5 -right-5 md:-bottom-8 md:-right-8 bg-navy text-white rounded-xl p-5 shadow-navy-lg"
               >
-                <div className="font-display text-4xl font-bold text-gold">1998</div>
-                <div className="text-white/60 text-xs mt-1">Founded in Siliguri</div>
+                <div className="font-display text-4xl font-bold text-gold">1970</div>
+                <div className="text-white/60 text-xs mt-1">Founded by Sri Ramswarup Agarwal</div>
               </motion.div>
 
               {/* Gold corner */}
@@ -112,13 +112,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-500 leading-relaxed">
                 <p>
-                  Founded in 1998 by the Ramswarup family, RBC India began as a small hardware shop in the heart of Siliguri. What started as a local neighbourhood store has grown into North Bengal&apos;s most trusted distributor of premium home hardware and bathroom accessories.
+                  Founded in 1970 by the late Sri Ramswarup Agarwal, RBC India was built on the foundations of hard work, integrity, and an unwavering commitment to excellence. In an era defined by manual effort and personal relationships, our founder&apos;s exceptional ability to build lasting networks laid the groundwork for everything we have become today.
                 </p>
                 <p>
-                  Our journey has been guided by one simple principle: never compromise on quality. From day one, we chose to carry only genuine products from reputable manufacturers — a decision that has earned us the trust of thousands of customers across West Bengal.
+                  Over five decades, we have grown into one of North Bengal and Sikkim&apos;s most trusted distribution companies — navigating challenges, celebrating milestones, and steadily expanding our reach. Our strength has always been our people: a team known for precision, dedication, and a relentless pursuit of quality.
                 </p>
                 <p>
-                  Today, we are the authorized distributors for 10+ of India&apos;s most respected brands — Jaquar, Racold, Sintex, EuroGuard, Scud, Prince and more. Whether you&apos;re renovating your home or outfitting a commercial property, we have the perfect solution.
+                  Today, we are proud authorized distributors for some of India&apos;s most respected Superbrands — Prince Pipes, Sintex Tanks, Jaquar Bath Fittings, and Racold Geysers. In recent years, we also launched our own brand, RBC — a curated range of premium bathroom accessories and designer mirrors, crafted to bring elegance and functionality to modern living spaces.
                 </p>
               </div>
 
@@ -186,7 +186,7 @@ export default function AboutPage() {
               Our Journey
               <span className="w-8 h-px bg-gold" />
             </span>
-            <h2 className="section-title">25+ Years of Growth</h2>
+            <h2 className="section-title">50+ Years of Growth</h2>
           </motion.div>
 
           <div className="relative">
