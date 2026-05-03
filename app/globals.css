@@ -3,25 +3,150 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy: #1a2744;
+  --navy-dark: #111c33;
+  --navy-light: #243252;
+  --gold: #c8a96e;
+  --gold-light: #d4b97e;
+  --gold-dark: #a88d5a;
+  --silver: #8c9cb0;
+  --white: #ffffff;
+  --off-white: #f8fafc;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: auto; /* handled by Lenis */
+  }
+
+  body {
+    @apply text-gray-800 bg-white font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+
+  ::selection {
+    background-color: rgba(200, 169, 110, 0.3);
+    color: #111c33;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-8 py-4 bg-gold text-navy-dark font-semibold text-sm tracking-wider uppercase rounded-sm transition-all duration-300 hover:bg-gold-light hover:shadow-gold-lg hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-8 py-4 border border-white text-white font-semibold text-sm tracking-wider uppercase rounded-sm transition-all duration-300 hover:bg-white hover:text-navy active:-translate-y-0;
+  }
+
+  .btn-navy {
+    @apply inline-flex items-center gap-2 px-8 py-4 bg-navy text-white font-semibold text-sm tracking-wider uppercase rounded-sm transition-all duration-300 hover:bg-navy-light hover:shadow-navy-lg hover:-translate-y-0.5;
+  }
+
+  .section-tag {
+    @apply inline-flex items-center gap-2 text-gold text-xs font-bold tracking-[0.2em] uppercase mb-4;
+  }
+
+  .section-title {
+    @apply font-display text-4xl md:text-5xl font-bold text-navy leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-gray-500 text-lg leading-relaxed max-w-2xl;
+  }
+
+  .card-premium {
+    @apply bg-white rounded-lg shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .gold-line {
+    @apply block w-12 h-0.5 bg-gold;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #c8a96e 0%, #d4b97e 50%, #a88d5a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .writing-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f3fa;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--navy);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* Marquee animation */
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.marquee-track {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  flex-shrink: 0;
+  min-width: 100%;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+/* Line decorations */
+.decorative-line::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+  margin-bottom: 1rem;
+}
+
+/* Hero parallax */
+.parallax-hero {
+  will-change: transform;
 }
