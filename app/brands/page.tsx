@@ -22,7 +22,7 @@ const brandColors: Record<string, { bg: string; text: string }> = {
 
 const heroImages = [
   "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=400&h=300&fit=crop",
-  "https://images.unsplash.com/photo-1620626011761-996317702519?q=80&w=400&h=300&fit=crop",
+  "https://images.unsplash.com/photo-1576698483491-8c43f0862543?q=80&w=400&h=300&fit=crop",
   "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=400&h=300&fit=crop",
   "https://images.unsplash.com/photo-1631049552240-59c37f38802b?q=80&w=400&h=300&fit=crop",
 ];

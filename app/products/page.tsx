@@ -120,7 +120,7 @@ export default function ProductsPage() {
       <section className="bg-navy pt-28 pb-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
-            src="https://images.unsplash.com/photo-1620626011761-996317702519?q=80&w=1920&fit=crop"
+            src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?q=80&w=1920&fit=crop"
             alt=""
             fill
             className="object-cover"
